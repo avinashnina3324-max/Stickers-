@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StickerWorld | Awesome Stickers</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font for a playful look -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">StickerWorld 🌍</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#products">Shop</a>
+            <a href="#">About</a>
+        </div>
+        <div class="cart-icon" onclick="toggleCart()">
+            Cart 🛒 <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Make Your Stuff Look Awesome</h1>
+            <p>High-quality vinyl stickers for your laptop, water bottle, and soul.</p>
+            <button onclick="document.getElementById('products').scrollIntoView()">Shop Now</button>
+        </div>
+    </header>
+
+    <!-- Product Section -->
+    <section id="products" class="container">
+        <h2>Trending Stickers</h2>
+        
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for a sticker..." onkeyup="filterStickers()">
+        </div>
+
+        <!-- Sticker Grid (Content injected by JS) -->
+        <div class="sticker-grid" id="sticker-grid">
+            <!-- Stickers will appear here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 StickerWorld. Stick them everywhere.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
